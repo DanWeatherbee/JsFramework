@@ -1,85 +1,170 @@
-/*Admin buttons*/
+    /*Admin buttons*/
 
-.edit-btns-default-fixed {
-    top: 13%;
-}
+    .edit-btns-default-fixed {
+        top: 13%;
+    }
 
-.edit-btns-edit-fixed {
-    top: 5%;
-}
-
-.edit-btns-save-fixed {
-    top: 5%;
-}
-
-.edit-btns-save-fixed,
-.edit-btns-edit-fixed,
-.edit-btns-default-fixed {
-    left: 2%;
-    position: fixed;
-    background-color: black;
-    color: white;
-    font-size: 3em;
-    z-index: 10000;
-    padding: 1%;
-}
-
-.fa-long-arrow-down {
-    color: white;
-    font-size: 3em;
-}
+    .edit-btns-save-fixed,
+    .edit-btns-edit-fixed {
+        top: 5%;
+    }
 
 
-.edit-btns {
-    color: red;
-    font-size: 3em;
-}
+    .edit-btns-save-fixed,
+    .edit-btns-edit-fixed,
+    .edit-btns-default-fixed {
+        left: 2%;
+        position: fixed;
+        background-color: black;
+        color: white;
+        font-size: 3em;
+        z-index: 10000;
+        padding: 1%;
+    }
 
-.textarea-style {
-    background-color: lightgrey;
-    color: black;
-    font-size: 3em;
-    max-width: 70%;
-}
+    .fa-long-arrow-down {
+        color: white;
+        font-size: 3em;
+    }
 
-#header {
-    background: url('css/bg.jpg') no-repeat center center;
-    height: 985px;
-}
+    .fa-briefcase {
+        left: 20%;
+    }
 
-.black-txt-shadow {
-    text-shadow: 0 2px 0 black;
-}
+    .fa-shopping-cart {
+        left: 70%;
+    }
 
-.red-txt-shadow {
-    text-shadow: 0 2px 0 red;
-}
+    .fa-briefcase,
+    .fa-shopping-cart {
+        font-size: 15em;
+        position: absolute;
+        bottom: 100px;
+        z-index: -1;
+        color: turquoise;
+        opacity: .7
+    }
 
-.white-txt-shadow {
-    text-shadow: 0 1px 0 white;
-}
+    .fa:hover {
+        color: limegreen;
+        background-color: black;
+    }
 
-.white-txt {
-    color: white;
-}
+    .fa {
+        padding: 1%;
+    }
 
-.big-txt {
-    font-size: 5em;
-}
+    .edit-btns {
+        color: red;
+        font-size: 3em;
+    }
 
-.pad-15 {
-    padding: 15%;
-}
+    .textarea-style {
+        background-color: lightgrey;
+        color: black;
+        font-size: 3em;
+        max-width: 70%;
+    }
 
-.pad-2 {
-    padding: 2%;
-}
+    video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translateX(-50%) translateY(-50%);
+        background: url('css/bg.jpg') no-repeat;
+        background-size: cover;
+        transition: 1s opacity;
+    }
 
-.border-1-white {
-    border: 1px solid;
-    border-color: white;
-}
+    .black-txt-shadow {
+        text-shadow: 0 2px 0 black;
+    }
 
-.radius-100 {
-    border-radius: 100%;
-}
+    .red-txt-shadow {
+        text-shadow: 0 2px 0 red;
+    }
+
+    .white-txt-shadow {
+        text-shadow: 0 2px 0 white;
+    }
+
+    .white-txt {
+        color: white;
+    }
+
+    .big-txt {
+        font-size: 5em;
+        font-weight: 100;
+    }
+
+    .pad-10 {
+        padding: 10%;
+    }
+
+    .pad-2 {
+        padding: 2%;
+    }
+
+    .border-1-white {
+        border: 1px solid;
+        border-color: white;
+    }
+
+    .radius-100 {
+        border-radius: 100%;
+    }
+    /*parallax*/
+
+    .block {
+        height: 1000px;
+        background-color: turquoise;
+        background: url('css/bg.jpg') no-repeat;
+        width: auto;
+        margin: 20% -15px 0 -30px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    /*Iphones*/
+
+    @media only screen and (max-width: 700px) {
+        .big-txt {
+            margin-top: 25%;
+            font-size: 4em;
+            font-weight: 100;
+        }
+        video {
+            display: none;
+        }
+        #root {
+            background: url('css/bg.jpg') no-repeat;
+        }
+        .edit-btns-default-fixed {
+            top: 20%;
+        }
+        .edit-btns-save-fixed,
+        .edit-btns-edit-fixed {
+            top: 13%;
+        }
+        .edit-btns-default-fixed,
+        .edit-btns-save-fixed,
+        .edit-btns-edit-fixed {
+            font-size: 1.5em;
+        }
+
+
+        .fa-briefcase,
+        .fa-shopping-cart {
+            font-size: 5em;
+        }
+    }
+    /*Ipads/laptops*/
+
+    @media only screen and (min-width: 501px) {}

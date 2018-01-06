@@ -21,8 +21,8 @@ app.editH1_1 = function(
         if ($('#edit-h1-btn1')) {
             $('#edit-h1-btn1').remove();
         };
-        $('#root').prepend(self.editTextArea1);
-        $('#root').prepend(self.saveH1TextBtn1);
+        $('#header').prepend(self.editTextArea1);
+        $('#header').prepend(self.saveH1TextBtn1);
     }
     app.saveH1Text1 = function() {
         var usrInput = $('#h1-input1').val();
