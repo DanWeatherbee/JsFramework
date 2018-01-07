@@ -1,9 +1,9 @@
 var dbScripts = {
     "libs": [
-        "js/core/lib/tether.min.js",
+        "js/core/lib/popper.min.js",
         "js/core/lib/bootstrap.min.js",
         "js/core/lib/mdb.min.js",
-        "js/core/lib/popper.min.js"
+        "js/core/lib/file-save.js"
     ],
     "head": [
         "js/core/helmet/helmet.js"

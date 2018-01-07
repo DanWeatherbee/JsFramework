@@ -1,12 +1,12 @@
     /*Admin buttons*/
 
     .edit-btns-default-fixed {
-        top: 13%;
+        top: 18%;
     }
 
     .edit-btns-save-fixed,
     .edit-btns-edit-fixed {
-        top: 5%;
+        top: 9%;
     }
 
 
@@ -21,6 +21,50 @@
         z-index: 10000;
         padding: 1%;
     }
+
+    .edit-btns {
+        color: red;
+        font-size: 3em;
+        position: relative;
+        left: 5%;
+        top: 300px;
+        font-size: 10em;
+        z-index: 1;
+    }
+
+    .textarea-style {
+        background-color: lightgrey;
+        color: black;
+        font-size: 3em;
+        max-width: 70%;
+    }
+
+    .navbar {
+        z-index: 1;
+        opacity: .7;
+        font-size: 2em;
+        font-weight: 400;
+    }
+    /*gradient black*/
+
+    .black-gradient {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+        background: #7d7e7d;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #7d7e7d 0%, #0e0e0e 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=0);
+        /* IE6-9 */
+    }
+
+    .top-layer {
+        z-index: 100;
+    }
+    /*fontawesome icons*/
 
     .fa-long-arrow-down {
         color: white;
@@ -40,7 +84,7 @@
         font-size: 15em;
         position: absolute;
         bottom: 100px;
-        z-index: -1;
+        z-index: 1;
         color: turquoise;
         opacity: .7
     }
@@ -52,18 +96,6 @@
 
     .fa {
         padding: 1%;
-    }
-
-    .edit-btns {
-        color: red;
-        font-size: 3em;
-    }
-
-    .textarea-style {
-        background-color: lightgrey;
-        color: black;
-        font-size: 3em;
-        max-width: 70%;
     }
 
     video {
@@ -80,18 +112,16 @@
         background-size: cover;
         transition: 1s opacity;
     }
+    /*shadows*/
 
     .black-txt-shadow {
         text-shadow: 0 2px 0 black;
     }
 
-    .red-txt-shadow {
-        text-shadow: 0 2px 0 red;
-    }
-
     .white-txt-shadow {
         text-shadow: 0 2px 0 white;
     }
+    /*text colors*/
 
     .white-txt {
         color: white;
@@ -101,6 +131,16 @@
         font-size: 5em;
         font-weight: 100;
     }
+    /* margins*/
+
+    .margin-top-10 {
+        margin-top: 10%;
+    }
+    /*padding*/
+
+    .pad-top-15 {
+        padding-top: 15%;
+    }
 
     .pad-10 {
         padding: 10%;
@@ -109,11 +149,13 @@
     .pad-2 {
         padding: 2%;
     }
+    /*borders*/
 
     .border-1-white {
         border: 1px solid;
         border-color: white;
     }
+    /*radius*/
 
     .radius-100 {
         border-radius: 100%;
@@ -132,6 +174,7 @@
         background-size: cover;
         background-attachment: fixed;
     }
+    /*    media querys --------------------------------------------------->*/
     /*Iphones*/
 
     @media only screen and (max-width: 700px) {

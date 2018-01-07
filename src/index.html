@@ -5,9 +5,8 @@
 </head>
 
 <body id="root">
-    <script src='js/core/lib/jquery-2.2.3.min.js'></script>
+    <script src='js/core/lib/jquery-3.2.1.min.js'></script>
     <script src='js/core/scripts.js'></script>
-    <script src='js/core/lib/file-save.js'></script>
     <script src='js/core/header/content/header-content.js'></script>
     <script src='js/core/db/db-content.js'></script>
     <script src='js/core/builder-class/app-builder-class.js'></script>
@@ -15,6 +14,11 @@
     <script src='js/core/header/methods/admin/header-db-save.js'></script>
     <script src='js/core/header/methods/admin/admin-controls-h1-1.js'></script>
     <script src='js/launch-admin/launch-admin.js'></script>
+    <script>
+    $('window').ready(function() {
+                new WOW().init();
+            });
+    </script>
 </body>
 
 </html>
