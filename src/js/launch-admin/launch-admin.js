@@ -40,3 +40,10 @@ var clearContentPage = function() {
     location.reload();
 };
 // ==================================================================
+var wowOn = function() {
+    new WOW().init();
+    console.log('wow initiated.');
+};
+$(document).ready(function() {
+     setTimeout(wowOn, 300);
+});
