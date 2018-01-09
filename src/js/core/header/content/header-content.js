@@ -38,7 +38,7 @@ var header = '<nav class="navbar fixed-top navbar-expand-lg navbar-dark black-tx
     '<a href="#block1"><i class="fa fa-shopping-cart text-left black-txt-shadow animated lightSpeedIn"' +
     ' aria-hidden="true"></i></a>' +
     '<div class="col-xs-12 text-center">' +
-    '<a href="#block1"><i class="fa fa-long-arrow-down black-txt-shadow radius-100 pad-2 animated bounce infinite margin-top-10" aria-hidden="true"></i></a>' +
+    '<a href="#block1"><i class="fa fa-long-arrow-down black-txt-shadow radius-100 pad-2 animated bounce infinite margin-top-20" aria-hidden="true"></i></a>' +
     '</div>' +
     '<section class="container-fluid block animated slideInLeft" id="block1"></section>' +
     // Footer ==================================================================>
@@ -49,9 +49,8 @@ var header = '<nav class="navbar fixed-top navbar-expand-lg navbar-dark black-tx
     '<div class="row">' +
     '<!--First column-->' +
     '<div class="col-md-4">' +
-    '<h5 class="title mb-4 mt-3 font-bold">Footer Content</h5>' +
-    '<p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit' +
-    'amet, consectetur adipisicing elit.</p>' +
+    '<h5 class="title mb-4 mt-3 font-bold">None-Database Editable Website in Javascript</h5>' +
+    '<p> * Great App for developers, edit online without tools and code it later.<br /> * Paste html directly into container and it is injected via Javascript.<br /> * With admin off the website feeds off Json file via API.<br />This App is unbreakable - code can be rebuilt internally via Default button.</p>' +
     '</div>' +
     '<!--/.First column-->' +
     '<hr class="clearfix w-100 d-md-none">' +
@@ -125,3 +124,10 @@ var header = '<nav class="navbar fixed-top navbar-expand-lg navbar-dark black-tx
     '<!--/.Copyright-->' +
     '</footer>' +
     '<!--/.Footer--></header>';
+
+    /* gradient buttons
+<button class="btn peach-gradient btn-rounded">Peach</button>
+<button class="btn purple-gradient btn-rounded">Purple</button>
+<button class="btn blue-gradient btn-rounded">Blue</button>
+<button class="btn aqua-gradient btn-rounded">Aqua</button>
+*/

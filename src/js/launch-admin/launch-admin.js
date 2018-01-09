@@ -1,8 +1,8 @@
 $('window').ready(function() {
     // app.editHeaderText();
     app.editH1_1();
-    $('#root').prepend('<i class="fa fa-edit edit-btns-edit-fixed" id="edit-content-page" onclick="editContentPage()"> -- Edit Page</i>');
-    $('#root').prepend('<i class="fa fa-save edit-btns-save-fixed" id="save-content-page" onclick="saveContentPage()"> -- Save Page</i>');
+    $('#root').prepend('<i class="fa fa-edit edit-btns-edit-fixed" id="edit-content-page" onclick="editContentPage()"> Customize</i>');
+    $('#root').prepend('<i class="fa fa-save edit-btns-save-fixed" id="save-content-page" onclick="saveContentPage()"> Save</i>');
     $('#root').prepend('<i class="fa fa-refresh edit-btns-default-fixed" id="default-content-page" onclick="clearContentPage()"> -- Default</i>');
     editContentPage();
 
@@ -45,5 +45,7 @@ var wowOn = function() {
     console.log('wow initiated.');
 };
 $(document).ready(function() {
-     setTimeout(wowOn, 300);
+    setTimeout(wowOn, 300);
+    // SideNav Initialization
+    $(".button-collapse").sideNav();
 });
