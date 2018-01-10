@@ -15,6 +15,6 @@ app.saveContentToDB = function() {
     localStorage.setItem('ContentEdited', siteContentStr);
     // Create Edit button.
     // app.createSomething();
-    app.createH1Text1();
+    app.createMainText1();
 
 };

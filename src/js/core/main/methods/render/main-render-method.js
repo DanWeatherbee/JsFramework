@@ -1,11 +1,11 @@
 var app = new CreateAppClass(CreateDB);
 
-app.renderHeader = function() {
+app.renderMain = function() {
     var self = this;
-    $('#root').append(self.siteContentObj.app.header[0].header);
+    $('#root').append(self.siteContentObj.app.main[0].main);
 };
 
-app.renderHeaderJson = function(db) {
+app.renderMainJson = function(db) {
     var self = this;
     // This is where we decide wether to load edited or default databases.
     self.db = 'ContentDefault.json';
@@ -22,7 +22,7 @@ app.renderHeaderJson = function(db) {
                 // Examine the text in the response
                 response.json().then(function(data) {
                     self.siteContentObj = data;
-                    self.renderHeader();
+                    self.renderMain();
                     $('.fa-save').remove();
                     $('.fa-edit').remove();
                     $('.fa-refresh').remove();
@@ -39,9 +39,9 @@ var launchAdmin = function() {
     var answer = prompt("Do you wish to load admin?", "yes");
 
     if (answer === 'yes') {
-        app.renderHeader();
+        app.renderMain();
     } else {
-        app.renderHeaderJson();
+        app.renderMainJson();
     };
 };
 
@@ -67,7 +67,7 @@ launchAdmin();
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  |======================|           launch page from database.
 */
-// app.renderHeaderJson();
+// app.renderMainJson();
 /*
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                                 +++++++++++++++++++++++++++++++++++++++++

@@ -1,5 +1,9 @@
     /*Admin buttons*/
 
+    #edit-btn-link {
+        text-decoration: none;
+    }
+
     .edit-btns-default-fixed {
         top: 18%;
     }
@@ -33,16 +37,22 @@
     }
     /*images*/
 
-    .img-small {
-        max-width: 100px;
-        max-height: 75px;
-    }
-
     .textarea-style {
         background-color: lightgrey;
         color: black;
         font-size: 3em;
         max-width: 70%;
+    }
+
+    #animation_container {
+        width: 1000px;
+        height: auto;
+    }
+
+
+    .iframe-element {
+        width: 100%;
+        height: auto;
     }
 
     .inline {
@@ -178,6 +188,10 @@
     }
     /* margins*/
 
+    .margin-top-3 {
+        margin-top: 3%;
+    }
+
     .margin-top-10 {
         margin-top: 10%;
     }
@@ -186,6 +200,9 @@
         margin-top: 20%;
     }
 
+    .margin-top-15 {
+        margin-top: 15%;
+    }
     /*padding*/
 
     .pad-top-15 {
@@ -214,15 +231,18 @@
 
     .block {
         height: 1000px;
-        background-color: turquoise;
-        background: url('css/bg.jpg') no-repeat;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), rgba(0, 0, 0, 0.5) url('css/bg.jpg') no-repeat center center;
         width: auto;
-        margin: 30% -15px 0 -30px;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
         background-attachment: fixed;
+    }
+
+    .img-small {
+        height: 50%;
+        width: 50%;
     }
 
     .all-caps {

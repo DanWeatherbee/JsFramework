@@ -6,8 +6,8 @@ Data Object (database)
 
 var CreateDB = {
     'app': {
-        'header': [{
-            'header': header
+        'main': [{
+            'main': main
         }]
     }
 };
