@@ -11,6 +11,7 @@ var helmet = '<meta charset="utf-8">' +
     '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.css" />' +
     '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">' +
     '<link href="css/fontawesome.css" rel="stylesheet">' +
-    '<link href="site.css" rel="stylesheet">';
+    '<link href="site.css" rel="stylesheet">' +
+    '<link href="css/worldplay.css" rel="stylesheet">';
 
 $('head').prepend(helmet);

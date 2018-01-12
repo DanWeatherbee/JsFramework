@@ -1,6 +1,7 @@
 // Nav =======================================================>
-var main = '<nav class="navbar fixed-top navbar-expand-lg navbar-dark black-txt-shadow blue-gradient">' +
-    '<a class="navbar-brand" href="http://danweatherbee-front-end-web-developer.com">Developer DW</a>' +
+var main = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark black-txt-shadow blue-gradient">' +
+    '<a class="navbar-brand all-caps text-center" href="http://danweatherbee-front-end-web-developer.com">Developer<br />Dan Weatherbee<br />2018</a>' +
+    '<img src="favicon.ico" class="center-block">' +
     '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"' +
     'aria-expanded="false" aria-label="Toggle navigation">' +
     '<span class="navbar-toggler-icon"></span>' +
@@ -24,17 +25,18 @@ var main = '<nav class="navbar fixed-top navbar-expand-lg navbar-dark black-txt-
     '</span>' +
     '</div>' +
     '</nav>' +
+    '<!-- End Nav ===============================================|-->' +
     // main begin =====================>
     '<!--main !Warning if you take out the main element you lose your edit button,' +
     ' use default to get it back however your edits will be lost' +
     ' unless you copy the text into the windows buffer - Ctrl + C -->' +
-    '<main id="main" class="animated fadeIn">' +
-    '<video height="1065" autoplay="true">' +
+    '<main id="main" class="animated fadeIn margin-top-20">' +
+    '<video class="main-parallax-video" height="1065" autoplay="true">' +
     '<source src="videos/mp4.mp4" type="video/mp4" />' +
     '</video>' +
     // Content =========================>
     '<!--Begin edit content top video parallax ==========================|-->' +
-    '<h1 class="animated zoomInUp black-txt-shadow white-txt text-center big-txt pad-10 blue-gradient-btn">' +
+    '<h1 class="animated zoomInUp black-txt-shadow white-txt text-center big-txt txt-100 blue-gradient-btn">' +
     'Welcome to my JsFramework<br /> Built in Java Script with admin.' +
     '</h1>' +
     '<a href="#block1"><i class="fa fa-briefcase black-txt-shadow animated lightSpeedIn" ' +
@@ -47,12 +49,19 @@ var main = '<nav class="navbar fixed-top navbar-expand-lg navbar-dark black-txt-
     '</div>' +
     '<!--End edit content top video parallax ==========================|-->' +
     '<!--Block 1 ===============================|-->' +
-    // block 1 ===================================>
-    '<section class="container-fluid block animated slideInLeft" id="block1"></section>' +
+    '<!--== MOCKUP ==|-->' +
+    // block 1 ==TODO build wether api for nav =====================>
+    '<!--These hrs are for link navigation nav/footer -->' +
+    '<hr class="margin-bottom-3" id="block1">' +
+    '<section class="container-fluid block font-1 text-center animated slideInLeft">' +
+    '<a class="btn btn-outline-success xl-txt blue-gradient-btn margin-top-10" onClick="loadPlayerDw()">Video Player</a>' +
+    '<div id="player-dw-root"></div>' +
+    '</section>' +
     /*
     block 2 ===================================>
     Footer ===================================>
     */
+    '<!--== MOCKUP ==|-->' +
     '<!--Block 1 end ============================|-->' +
     '<!--Footer Begin ===========================|-->' +
     '<footer class="page-footer center-on-small-only blue-gradient container-fluid animated fadeInUp">' +

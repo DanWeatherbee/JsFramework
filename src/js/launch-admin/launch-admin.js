@@ -3,7 +3,7 @@ $('window').ready(function() {
     app.editMain();
     $('#root').prepend('<a href="#root" id="edit-btn-link"><i class="fa fa-edit edit-btns-edit-fixed" id="edit-content-page" onclick="editContentPage()"> Customize</i></a>');
     $('#root').prepend('<i class="fa fa-save edit-btns-save-fixed" id="save-content-page" onclick="saveContentPage()"> Save</i>');
-    $('#root').prepend('<i class="fa fa-refresh edit-btns-default-fixed" id="default-content-page" onclick="clearContentPage()"> -- Default</i>');
+    $('#root').prepend('<i class="fa fa-refresh edit-btns-default-fixed" id="default-content-page" onclick="clearContentPage()"> Default</i>');
     editContentPage();
 
     $('.edit-btns').hide();
