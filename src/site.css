@@ -5,6 +5,7 @@
 #root {
     width: 100%;
     height: auto;
+    background: url('css/bg.jpg') no-repeat;
 }
 
 #edit-btn-link {
@@ -49,6 +50,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Custom video player dw
 \*----------------------------------------*/
@@ -75,6 +81,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Image splitting ipad
 \*----------------------------------------*/
@@ -87,6 +98,11 @@
     -o-border-image: url('css/tablet-bg.png') 130 55 130 repeat;
     border-image: url('css/tablet-bg.png') 130 55 130 fill repeat;
 }
+
+
+
+
+
 
 
 
@@ -114,6 +130,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Background Colors
 \*----------------------------------------*/
@@ -121,6 +142,11 @@
 .bg-white {
     background-color: white;
 }
+
+
+
+
+
 
 
 
@@ -172,6 +198,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Fontawesome icons
 \*----------------------------------------*/
@@ -182,18 +213,18 @@
 }
 
 .fa-briefcase {
-    left: 20%;
+    left: 100px;
 }
 
 .fa-shopping-cart {
-    left: 70%;
+    right: 100px;
 }
 
 .fa-briefcase,
 .fa-shopping-cart {
-    font-size: 15em;
+    font-size: 6em;
     position: absolute;
-    bottom: 100px;
+    bottom: -150px;
     z-index: 1;
     color: turquoise;
     opacity: .7
@@ -203,6 +234,11 @@
     color: limegreen;
     background-color: black;
 }
+
+
+
+
+
 
 
 
@@ -239,6 +275,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Text Shadows
 \*----------------------------------------*/
@@ -250,6 +291,11 @@
 .white-txt-shadow {
     text-shadow: 0 2px 0 white;
 }
+
+
+
+
+
 
 
 
@@ -272,6 +318,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Letter Spacing
 \*----------------------------------------*/
@@ -279,6 +330,11 @@
 .letter-spacing-minus-3 {
     letter-spacing: -3px;
 }
+
+
+
+
+
 
 
 
@@ -297,6 +353,11 @@
 .dodgerblue-txt {
     color: dodgerblue;
 }
+
+
+
+
+
 
 
 
@@ -328,6 +389,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Text Weight
 \*----------------------------------------*/
@@ -346,6 +412,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Opacity
 \*----------------------------------------*/
@@ -353,6 +424,11 @@
 .opacity-9 {
     opacity: .9;
 }
+
+
+
+
+
 
 
 
@@ -372,6 +448,10 @@
     margin-top: 3%;
 }
 
+.margin-top-5 {
+    margin-top: 5%;
+}
+
 .margin-top-10 {
     margin-top: 10%;
 }
@@ -380,9 +460,22 @@
     margin-top: 20%;
 }
 
+.margin-top-30 {
+    margin-top: 30%;
+}
+
+.margin-top-35 {
+    margin-top: 35%;
+}
+
 .margin-top-15 {
     margin-top: 15%;
 }
+
+
+
+
+
 
 
 
@@ -436,6 +529,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Borders
 \*----------------------------------------*/
@@ -452,6 +550,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Radius
 \*----------------------------------------*/
@@ -459,6 +562,11 @@
 .radius-100 {
     border-radius: 100%;
 }
+
+
+
+
+
 
 
 
@@ -479,6 +587,32 @@
 
 
 
+
+
+
+/*----------------------------------------*\
+#Canvas Overlay
+\*----------------------------------------*/
+
+#animation_container {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#canvas-txt {
+    position: absolute;
+    top: -130px;
+    left: 150px;
+}
+
+
+
+
+
 /*----------------------------------------*\
 #Parallax Overlays
 \*----------------------------------------*/
@@ -493,38 +627,6 @@
     background-size: cover;
 }
 
-.overlay2 {
-    height: 425px;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), rgba(0, 0, 0, 0.7) url('css/bg-overlay2.jpg') no-repeat center center;
-    width: auto;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.overlay3 {
-    height: 612px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 35%, rgba(0, 0, 0, 0.5)), url('https://bo4pr2wq1re2lm80n2j0spf1-wpengine.netdna-ssl.com/wp-content/uploads/2016/11/takeatour-1.jpg') no-repeat center center;
-    background-size: cover width: auto;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.overlay-blue {
-    background-color: #00a1e1;
-    opacity: .53;
-    height: 425px;
-}
-
-.quote-overlay2 {
-    position: relative;
-    bottom: 270px;
-    text-shadow: 0 2px 0 black;
-}
-
 .img-small {
     height: 50%;
     width: 50%;
@@ -533,6 +635,11 @@
 .all-caps {
     text-transform: uppercase;
 }
+
+
+
+
+
 
 
 
@@ -554,6 +661,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Media Querys
 \*----------------------------------------*/
@@ -562,47 +674,18 @@
 /*Iphones*/
 
 @media only screen and (max-width: 700px) {
-    .big-txt {
-        margin-top: 25%;
-        font-size: 4em;
-        font-weight: 100;
-    }
 
     #root {
         background: url('css/bg.jpg') no-repeat;
     }
-    .edit-btns-default-fixed {
-        top: 20%;
-    }
-    .edit-btns-save-fixed,
-    .edit-btns-edit-fixed {
-        top: 13%;
-    }
-    .edit-btns-default-fixed,
-    .edit-btns-save-fixed,
-    .edit-btns-edit-fixed {
-        font-size: 1.5em;
-    }
-    .main-parallax-video,
-    .fa-long-arrow-down,
-    .fa-briefcase,
-    .fa-shopping-cart {
-        display: none;
-    }
+
     .ipad {
         border: 0 solid;
         background: inherit;
     }
-    .textarea-style {
-        font-size: 2em;
-        min-width: 300px;
-        margin-top: 70%;
-    }
-    .big-txt {
-        margin: 0;
-    }
+
     .img-size-50 {
-        width:  20%;
+        width: 20%;
     }
 }
 
@@ -611,15 +694,36 @@
         height: auto;
         width: 100%;
     }
-    .fa-long-arrow-down,
-    .fa-briefcase,
-    .fa-shopping-cart {
-        font-size: 3em;
+
+    #canvas-txt {
+        font-size: 1.8em;
+        top: -130px;
+    }
+    .header-txt {
+        font-size: 2em;
+        margin-top: 5%;
     }
 }
 
 
 
+
+
 /*Ipads/laptops*/
 
-@media only screen and (min-width: 501px) {}
+@media only screen and (max-width: 801px) {
+
+    #canvas-txt {
+        font-size: 1.5em;
+        top: -130px;
+        left: 0px;
+    }
+    #video-btn {
+        font-size: 5em;
+    }
+    .fa-briefcase,
+    .fa-shopping-cart {
+        top: 460px;
+        font-size: 4em;
+    }
+}

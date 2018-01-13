@@ -28,44 +28,55 @@ var main = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark bla
     '</span>' +
     '</div>' +
     '</nav>' +
-    '<!-- End Nav ===============================================|-->' +
-    // main begin =====================>
-    '<!--main !Warning if you take out the main element you lose your edit button,' +
+    '<!-- End Nav =================================|-->' +
+    // Main container begin ==============================>
+    '<!-- **************|   MAIN   |************--   !  WARNING if you take out the Main container you will DELETE your CUSTOM button,' +
     ' use default to get it back however your edits will be lost' +
-    ' unless you copy the text into the windows buffer - Ctrl + C -->' +
-    '<main id="main" class="contaner-fluid animated fadeIn margin-top-20">' +
-    '<video class="main-parallax-video" height="1065" autoplay="true">' +
+    ' unless you copy the text into the windows buffer - Ctrl + C  ============  Begin Main Container  ===========-->' +
+    '<main id="main" class="contaner-fluid animated fadeIn margin-top-5">' +
+    '<!-- =============== Video Parallax  ===============-->' +
+    '<video class="main-parallax-video animated zoomIn" autoplay="true">' +
     '<source src="videos/mp4.mp4" type="video/mp4" />' +
     '</video>' +
-    // Content =========================>
-    '<!--Begin edit content top video parallax ==========================|-->' +
-    '<h1 class="animated zoomInUp black-txt-shadow white-txt text-center big-txt txt-100 blue-gradient-btn">' +
-    'Welcome to my JsFramework<br /> Built in Java Script with admin.' +
-    '</h1>' +
+    '<!-- ==========  End Video Parallax  =========-->' +
+    // Content ================================>
+    '<!--==***************** MOCKUP AREA BEGIN HEADER*******************==|-->' +
+    '<h1 class="animated slideInRight header-txt black-txt-shadow white-txt xl-txt text-center blue-gradient-btn">' +
+    'JsFramework Prototype V 1.0</h1>' +
+    '<p class="animated slideInRight header-txt black-txt-shadow white-txt text-center medium-txt blue-gradient-btn">' +
+    'Created in Java Script using the MDB Bootstrap CSS framework for state of the art design<br /> --- with Administration built right in.' +
+    '</p>' +
     '<a href="#block1"><i class="fa fa-briefcase black-txt-shadow animated lightSpeedIn" ' +
     ' aria-hidden="true"></i></a>' +
     '<a href="#block1"><i class="fa fa-shopping-cart text-left black-txt-shadow animated lightSpeedIn"' +
     ' aria-hidden="true"></i></a>' +
     '<div class="text-center">' +
-    '<a href="#block1"><i class="fa fa-long-arrow-down black-txt-shadow radius-100' +
+    '<a href="#block1"><i class="fa fa-long-arrow-down black-txt-shadow radius-100 margin-top-35' +
     ' pad-2 animated bounce infinite margin-top-20" aria-hidden="true"></i></a>' +
     '</div>' +
-    '<!--End edit content top video parallax ==========================|-->' +
-    '<!--Block 1 ===============================|-->' +
-    '<!--== MOCKUP ==|-->' +
+    '<!--==***************** MOCKUP AREA END HEADER*******************==|-->' +
+    '<!--Block 1 ================|-->' +
+    '<!--==***************** MOCKUP AREA BEGIN  Create here. *******************==|-->' +
     // block 1 ==TODO build wether api for nav =====================>
+    '<iframe class="showcase-banner animated zoomInDown" width="100%" height="auto" src="worldplay-showcase-bkg.html" scrolling="no" frameBorder="0">' +
+    '</iframe>' +
+    '<div class="container"><div class="col-sm-12"><p class="medium-txt white-txt text-center" id="canvas-txt">' +
+    'Paste your HTML write into the textarea and boom! Instant website!<br />' +
+    'Save it with a click to a json file, Plug and play!</p></div></div>' +
     '<!--These hrs are for link navigation nav/footer -->' +
-    '<hr class="margin-bottom-3" id="block1">' +
+    '<hr class="margin-bottom-3 margin-top-15" id="block1">' +
+    '<!-- **************|   VIDEO  PLAYER  BEGIN  |************--> ' +
     '<section class="container-fluid block font-1 text-center animated slideInLeft">' +
-    '<a class="btn btn-outline-success xl-txt blue-gradient-btn margin-top-10" onClick="loadPlayerDw()">Video Player</a>' +
+    '<a class="btn btn-outline-success xl-txt blue-gradient-btn margin-top-5" id="video-btn" onClick="loadPlayerDw()">Video Player</a>' +
     '<div id="player-dw-root"></div>' +
     '</section>' +
-    /*
-    block 2 ===================================>
-    Footer ===================================>
-    */
-    '<!--== MOCKUP ==|-->' +
+    '<!-- **************|   VIDEO  PLAYER  END  |************--> ' +
+
+    '<!--==***************** MOCKUP AREA END Paste your html in above. **********************==|-->' +
     '<!--Block 1 end ============================|-->' +
+    '<!-- **************|   MAIN  END   |************--> ' +
+    '</main>' + // MAIN container end ==============================>
+    //  Footer ===================================>
     '<!--Footer Begin ===========================|-->' +
     '<footer class="page-footer center-on-small-only blue-gradient container-fluid animated fadeInUp">' +
     '<!--Footer Links-->' +
