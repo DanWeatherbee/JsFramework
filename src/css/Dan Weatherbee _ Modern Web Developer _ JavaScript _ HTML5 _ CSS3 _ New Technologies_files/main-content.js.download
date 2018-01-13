@@ -17,9 +17,6 @@ var main = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark bla
     '<li class="nav-item">' +
     '<a class="nav-link" href="#block2">Pricing</a>' +
     '</li>' +
-    '<li class="nav-item">' +
-    '<a class="nav-link" href="#block4">block4</a>' +
-    '</li>' +
     '</ul>' +
     '<span class="navbar-text white-text center-block">' +
     '<b>Dan Weatherbee</b> | <em>Web Developer</em> | ' +
@@ -33,7 +30,7 @@ var main = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark bla
     '<!--main !Warning if you take out the main element you lose your edit button,' +
     ' use default to get it back however your edits will be lost' +
     ' unless you copy the text into the windows buffer - Ctrl + C -->' +
-    '<main id="main" class="contaner-fluid animated fadeIn margin-top-20">' +
+    '<main id="main" class="animated fadeIn margin-top-20">' +
     '<video class="main-parallax-video" height="1065" autoplay="true">' +
     '<source src="videos/mp4.mp4" type="video/mp4" />' +
     '</video>' +
@@ -90,7 +87,7 @@ var main = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark bla
     '<li><a href="#root">Home</a></li>' +
     '<li><a href="#block1">Features</a></li>' +
     '<li><a href="#block2">Pricing</a></li>' +
-    '<li><a href="#block4">block 4</a></li>' +
+    '<li><a href="#block3">block 4</a></li>' +
     '</ul>' +
     '</div>' +
     '<!--/.Second column-->' +

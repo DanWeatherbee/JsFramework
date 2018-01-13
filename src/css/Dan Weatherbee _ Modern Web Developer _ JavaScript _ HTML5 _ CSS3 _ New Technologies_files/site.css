@@ -2,11 +2,6 @@
 #Admin
 \*----------------------------------------*/
 
-#root {
-    width: 100%;
-    height: auto;
-}
-
 #edit-btn-link {
     text-decoration: none;
 }
@@ -20,14 +15,15 @@
     top: 9%;
 }
 
+
 .edit-btns-save-fixed,
 .edit-btns-edit-fixed,
 .edit-btns-default-fixed {
-    right: 2%;
+    left: 2%;
     position: fixed;
     background-color: black;
     color: white;
-    font-size: 2em;
+    font-size: 3em;
     z-index: 10000;
     padding: 1%;
 }
@@ -35,17 +31,23 @@
 .edit-btns {
     color: red;
     font-size: 3em;
-    position: fixed;
-    left: 75%;
-    top: 150px;
+    position: relative;
+    left: 5%;
+    top: 300px;
     font-size: 10em;
     z-index: 1;
 }
 
-.nav-link:hover {
-    background-color: black;
-    text-transform: uppercase;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -75,6 +77,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /*----------------------------------------*\
 #Image splitting ipad
 \*----------------------------------------*/
@@ -90,15 +100,17 @@
 
 
 
+
+
+
+
+
+
+
+
 /*----------------------------------------*\
 #Images
 \*----------------------------------------*/
-
-.img-size-50 {
-    width: 8%;
-    height: auto;
-    display: inline-flex;
-}
 
 .textarea-style {
     font-size: 2em;
@@ -114,6 +126,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------*\
 #Background Colors
 \*----------------------------------------*/
@@ -121,6 +153,21 @@
 .bg-white {
     background-color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -166,9 +213,39 @@
     /* IE6-9 */
 }
 
+
 .top-layer {
     z-index: 100;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -206,6 +283,33 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------*\
 #Video Overlay Main
 \*----------------------------------------*/
@@ -239,6 +343,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------*\
 #Text Shadows
 \*----------------------------------------*/
@@ -250,6 +367,29 @@
 .white-txt-shadow {
     text-shadow: 0 2px 0 white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -266,9 +406,27 @@
     font-family: openSans;
 }
 
-.font-2 {
-    font-family: arial;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -279,6 +437,23 @@
 .letter-spacing-minus-3 {
     letter-spacing: -3px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -300,14 +475,29 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------*\
 #Text Sizes
 \*----------------------------------------*/
 
 .xl-txt {
-    font-size: 7em;
+    font-size: 8em;
     font-weight: 300;
-    text-shadow: 0 2px 0 black;
+    text-shadow: 0 5px 0 black;
 }
 
 .big-txt {
@@ -315,16 +505,31 @@
 }
 
 .large-txt {
-    font-size: 4em;
+    font-size: 3em;
 }
 
 .medium-txt {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .small-txt {
     font-size: 1em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -346,6 +551,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------*\
 #Opacity
 \*----------------------------------------*/
@@ -356,16 +577,31 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------*\
 #Margins
 \*----------------------------------------*/
 
 .margin-bottom-3 {
     margin-bottom: 3%;
-}
-
-.margin-bottom-10 {
-    margin-bottom: 10%;
 }
 
 .margin-top-3 {
@@ -383,6 +619,24 @@
 .margin-top-15 {
     margin-top: 15%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -418,7 +672,7 @@
     padding-top: 1%;
 }
 
-.pad-bottom-5 {
+.pad-bottom-15 {
     padding-bottom: 5%;
 }
 
@@ -433,6 +687,22 @@
 .pad-2 {
     padding: 2%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -452,6 +722,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------*\
 #Radius
 \*----------------------------------------*/
@@ -459,6 +743,34 @@
 .radius-100 {
     border-radius: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -478,13 +790,12 @@
 }
 
 
-
 /*----------------------------------------*\
 #Parallax Overlays
 \*----------------------------------------*/
 
 .overlay1 {
-    height: 680px;
+    height: 1000px;
     background: linear-gradient(rgba(35, 35, 35, 0.5), rgba(35, 35, 35, 0.5)), rgba(35, 35, 35, 0.5) url('css/bg-group.jpg') no-repeat center center;
     width: auto;
     -webkit-background-size: cover;
@@ -494,35 +805,14 @@
 }
 
 .overlay2 {
-    height: 425px;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), rgba(0, 0, 0, 0.7) url('css/bg-overlay2.jpg') no-repeat center center;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), rgba(0, 0, 0, 0.7) url('https://bo4pr2wq1re2lm80n2j0spf1-wpengine.netdna-ssl.com/wp-content/uploads/2016/11/8867c5_e945cf6f5d404436a25709bcacb51ed4-e1493999386377.jpg') no-repeat center center;
     width: auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-.overlay3 {
-    height: 612px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 35%, rgba(0, 0, 0, 0.5)), url('https://bo4pr2wq1re2lm80n2j0spf1-wpengine.netdna-ssl.com/wp-content/uploads/2016/11/takeatour-1.jpg') no-repeat center center;
-    background-size: cover width: auto;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.overlay-blue {
-    background-color: #00a1e1;
-    opacity: .53;
-    height: 425px;
-}
-
-.quote-overlay2 {
-    position: relative;
-    bottom: 270px;
-    text-shadow: 0 2px 0 black;
+    z-index: 1;
 }
 
 .img-small {
@@ -533,6 +823,31 @@
 .all-caps {
     text-transform: uppercase;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -551,6 +866,32 @@
 .block-size-1000 {
     height: 1000px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -583,26 +924,15 @@
     .edit-btns-edit-fixed {
         font-size: 1.5em;
     }
-    .main-parallax-video,
-    .fa-long-arrow-down,
+
+
     .fa-briefcase,
     .fa-shopping-cart {
-        display: none;
+        font-size: 5em;
     }
     .ipad {
         border: 0 solid;
         background: inherit;
-    }
-    .textarea-style {
-        font-size: 2em;
-        min-width: 300px;
-        margin-top: 70%;
-    }
-    .big-txt {
-        margin: 0;
-    }
-    .img-size-50 {
-        width:  20%;
     }
 }
 
@@ -611,12 +941,14 @@
         height: auto;
         width: 100%;
     }
-    .fa-long-arrow-down,
-    .fa-briefcase,
-    .fa-shopping-cart {
-        font-size: 3em;
-    }
 }
+
+
+
+
+
+
+
 
 
 

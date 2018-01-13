@@ -12,7 +12,7 @@ app.editMain = function(
 
     self.editMainTextBtn1 = '<i class="fa fa-edit edit-btns" id="edit-main-btn1" onclick="app.editMainText1()"></i>';
     self.saveMainTextBtn1 = '<i class="fa fa-save edit-btns" id="save-main-btn1" onclick="app.saveMainText1()"></i>';
-    self.editTextArea1 = '<textarea class="form-control textarea-style center-block" rows="1" number="3" maxlength="100000" ' +
+    self.editTextArea1 = '<textarea class="form-control textarea-style white-txt-shadow center-block" rows="1" number="3" maxlength="100000" ' +
         'id="main-input1">' +
         self.siteContentObj.app.main[0].main +
         '</textarea>';
