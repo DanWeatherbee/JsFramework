@@ -12,6 +12,11 @@
     text-decoration: none;
 }
 
+.showcase-banner {
+    height: auto;
+    width: 1000;
+}
+
 .edit-btns-default-fixed {
     top: 18%;
 }
@@ -43,14 +48,31 @@
     z-index: 1;
 }
 
+#game-play-btn {
+    max-width: 510px;
+    position: fixed;
+    left: 36.50%;
+    z-index: 1000;
+}
+
 .nav-link:hover {
     background-color: black;
     text-transform: uppercase;
 }
 
-
-
-
+#game-play-btn:hover,
+.navbar:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#19458d+20,216ec7+50,19458d+80&0+0,0.8+42,1+49,0.8+56,0+100 */
+    background: -moz-linear-gradient(top, rgba(25, 69, 141, 0) 0%, rgba(25, 69, 141, 0.38) 20%, rgba(31, 99, 184, 0.8) 42%, rgba(33, 109, 197, 1) 49%, rgba(33, 110, 199, 0.97) 50%, rgba(31, 102, 187, 0.8) 56%, rgba(25, 69, 141, 0.36) 80%, rgba(25, 69, 141, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(25, 69, 141, 0) 0%, rgba(25, 69, 141, 0.38) 20%, rgba(31, 99, 184, 0.8) 42%, rgba(33, 109, 197, 1) 49%, rgba(33, 110, 199, 0.97) 50%, rgba(31, 102, 187, 0.8) 56%, rgba(25, 69, 141, 0.36) 80%, rgba(25, 69, 141, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(25, 69, 141, 0) 0%, rgba(25, 69, 141, 0.38) 20%, rgba(31, 99, 184, 0.8) 42%, rgba(33, 109, 197, 1) 49%, rgba(33, 110, 199, 0.97) 50%, rgba(31, 102, 187, 0.8) 56%, rgba(25, 69, 141, 0.36) 80%, rgba(25, 69, 141, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0019458d', endColorstr='#0019458d', GradientType=0);
+    background-color: black;
+    /* IE6-9 */
+}
 
 
 
@@ -86,6 +108,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Image splitting ipad
 \*----------------------------------------*/
@@ -99,7 +126,15 @@
     border-image: url('css/tablet-bg.png') 130 55 130 fill repeat;
 }
 
+.ipad-big {
 
+    text-align: center;
+    border-width: 5px 70px 5px;
+    -moz-border-image: url('css/tablet-bg.png') 50 3 50 repeat;
+    -webkit-border-image: url('css/tablet-bg.png') 50 3 50 repeat;
+    -o-border-image: url('css/tablet-bg.png') 50 3 50 repeat;
+    border-image: url('css/tablet-bg.png') 50 3 50 fill repeat;
+}
 
 
 
@@ -117,8 +152,9 @@
 }
 
 .textarea-style {
-    font-size: 2em;
-    max-width: 80%;
+    margin-top: 4%;
+    font-size: 24px;
+    max-width: 95%;
 }
 
 .navbar {
@@ -135,6 +171,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Background Colors
 \*----------------------------------------*/
@@ -142,6 +183,11 @@
 .bg-white {
     background-color: white;
 }
+
+
+
+
+
 
 
 
@@ -203,6 +249,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Fontawesome icons
 \*----------------------------------------*/
@@ -234,6 +285,11 @@
     color: limegreen;
     background-color: black;
 }
+
+
+
+
+
 
 
 
@@ -280,6 +336,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Text Shadows
 \*----------------------------------------*/
@@ -291,6 +352,11 @@
 .white-txt-shadow {
     text-shadow: 0 2px 0 white;
 }
+
+
+
+
+
 
 
 
@@ -323,6 +389,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Letter Spacing
 \*----------------------------------------*/
@@ -330,6 +401,11 @@
 .letter-spacing-minus-3 {
     letter-spacing: -3px;
 }
+
+
+
+
+
 
 
 
@@ -361,6 +437,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Text Sizes
 \*----------------------------------------*/
@@ -384,8 +465,13 @@
 }
 
 .small-txt {
-    font-size: 1em;
+    font-size: 2em;
 }
+
+
+
+
+
 
 
 
@@ -417,6 +503,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Opacity
 \*----------------------------------------*/
@@ -424,6 +515,11 @@
 .opacity-9 {
     opacity: .9;
 }
+
+
+
+
+
 
 
 
@@ -471,6 +567,11 @@
 .margin-top-15 {
     margin-top: 15%;
 }
+
+
+
+
+
 
 
 
@@ -534,6 +635,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Borders
 \*----------------------------------------*/
@@ -555,6 +661,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Radius
 \*----------------------------------------*/
@@ -562,6 +673,11 @@
 .radius-100 {
     border-radius: 100%;
 }
+
+
+
+
+
 
 
 
@@ -590,6 +706,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Canvas Overlay
 \*----------------------------------------*/
@@ -608,6 +729,11 @@
     top: -130px;
     left: 150px;
 }
+
+
+
+
+
 
 
 
@@ -643,6 +769,11 @@
 
 
 
+
+
+
+
+
 /*----------------------------------------*\
 #Block sizing
 \*----------------------------------------*/
@@ -658,6 +789,11 @@
 .block-size-1000 {
     height: 1000px;
 }
+
+
+
+
+
 
 
 
@@ -703,9 +839,20 @@
         font-size: 2em;
         margin-top: 5%;
     }
+    .textarea-style {
+        margin-top: 10%;
+        font-size: 18px;
+    }
 }
 
-
+@media only screen and (max-width: 1400px) {
+    #game-play-btn {
+        max-width: 510px;
+        position: fixed;
+        left: 18%;
+        z-index: 1000;
+    }
+}
 
 
 
@@ -725,5 +872,9 @@
     .fa-shopping-cart {
         top: 460px;
         font-size: 4em;
+    }
+    .textarea-style {
+        margin-top: 30%;
+        font-size: 14px;
     }
 }

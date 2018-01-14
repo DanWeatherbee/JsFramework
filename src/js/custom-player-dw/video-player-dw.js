@@ -18,7 +18,7 @@ var loadPlayerDw = function() {
     $('.dw-player').addClass('animated hinge');
 
     setTimeout(function() {
-        $('.dw-player').remove();
+        $('.dw-player').addClass('animated hinge');
 
         renderPlayer();
 
@@ -33,11 +33,24 @@ var renderPlayer = function() {
         '<source class="vid-src" src="videos/worldplay.mp4" type="video/mp4" />' +
         '</video>'
     );
-    $('.loading').remove();
+    $('.loading').addClass('animated hinge');
     $('#showcase-container').fadeOut();
     setTimeout(function() {
         $('#showcase-container').fadeIn();
-        $('.dw-player').remove();
+        $('.dw-player').addClass('animated hinge');
     }, 39000);
 
+};
+var playGame = function() {
+    var gameDW = '<a class="btn btn-outline-default nav-link blue-gradient medium-txt black-txt-shadow text-center" id="game-play-btn" onClick="playGame()">Click to Replay - Hint: Use your arrow keys to play.</a><iframe class="ipad-big animated zoomInDown center-block" width="800" height="900" src="app-p3-master/index.html" scrolling="no" frameBorder="0"></iframe>';
+
+    $('nav').addClass('animated hinge');
+    $('#game-header').addClass('animated hinge');
+    $('#edit-content-page').addClass('animated hinge');
+    setTimeout(function() {
+        $('#root').html('');
+        $('#root').append(
+            gameDW
+        );
+    }, 2000);
 };

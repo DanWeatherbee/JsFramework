@@ -1,5 +1,5 @@
 var app = new CreateAppClass(CreateDB);
-
+var gameDW = '<a class="btn btn-outline-default nav-link blue-gradient medium-txt black-txt-shadow text-center" id="game-play-btn2" onClick="playGame()">Click to Replay - Hint: Use your arrow keys to play.</a><iframe class="ipad-big animated zoomInDown center-block" width="800" height="800" src="app-p3-master/index.html" scrolling="no" frameBorder="0"></iframe>';
 app.renderMain = function() {
     var self = this;
     $('#root').append(self.siteContentObj.app.main[0].main);
@@ -13,10 +13,14 @@ app.renderMainJson = function(db) {
         .then(
             function(response) {
                 if (response.status !== 200) {
+
                     console.log('Looks like there was a problem. Status Code: ' +
                         response.status);
+                    playGame()
+                    $('.edit-btns-edit-fixed').addClass('animated hinge');
                     alert('There is no db fille to load. Create one and download it. Place it in the src folder.');
-                    return;
+
+
                 }
 
                 // Examine the text in the response

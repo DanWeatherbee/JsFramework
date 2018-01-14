@@ -41,9 +41,9 @@ var main = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark bla
     '<!-- ==========  End Video Parallax  =========-->' +
     // Content ================================>
     '<!--==***************** MOCKUP AREA BEGIN HEADER*******************==|-->' +
-    '<h1 class="animated slideInRight header-txt black-txt-shadow white-txt xl-txt text-center blue-gradient-btn">' +
+    '<h1 class="animated slideInRight header-txt black-txt-shadow white-txt xl-txt text-center blue-gradient-btn" id="main-header-h1">' +
     'JsFramework Prototype V 1.0</h1>' +
-    '<p class="animated slideInRight header-txt black-txt-shadow white-txt text-center medium-txt blue-gradient-btn">' +
+    '<p class="animated slideInRight header-txt black-txt-shadow white-txt text-center medium-txt blue-gradient-btn" id="main-header-p">' +
     'Created in Java Script using the MDB Bootstrap CSS framework for state of the art design<br /> --- with Administration built right in.' +
     '</p>' +
     '<a href="#block1"><i class="fa fa-briefcase black-txt-shadow animated lightSpeedIn" ' +
@@ -68,6 +68,7 @@ var main = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark bla
     '<!-- **************|   VIDEO  PLAYER  BEGIN  |************--> ' +
     '<section class="container-fluid block font-1 text-center animated slideInLeft">' +
     '<a class="btn btn-outline-success xl-txt blue-gradient-btn margin-top-5" id="video-btn" onClick="loadPlayerDw()">Video Player</a>' +
+    '<button class="btn btn-outline-success xl-txt blue-gradient-btn margin-top-5" onClick="playGame()">Play Game</button>' +
     '<div id="player-dw-root"></div>' +
     '</section>' +
     '<!-- **************|   VIDEO  PLAYER  END  |************--> ' +

@@ -1,7 +1,7 @@
-/*
-Written in a Object Oriented pattern OOP by Dan Weatherbee
-
- Save to Storage and pull data from it. ================================
+/**
+* Written in a Object Oriented pattern OOP by Dan Weatherbee
+*
+ * Save to Storage and pull data from it. ================================
 */
 
 app.saveContentToDB = function() {
