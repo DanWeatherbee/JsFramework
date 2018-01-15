@@ -12,32 +12,25 @@ e.g. template;
 
 
 var loadPlayerDw = function() {
-    $('#player-dw-root').prepend(
-        '<h1 class="loading text-center animated pulse infinite big-txt">Player is loading <i class="fa fa-spinner" aria-hidden="true"></i></h1>'
+    $('#root').html(
+        '<h1 class="loading text-center animated zoomIn infinite big-txt">Player is loading <i class="fa fa-spinner" aria-hidden="true"></i></h1>'
     );
-    $('.dw-player').addClass('animated hinge');
-
-    setTimeout(function() {
-        $('.dw-player').addClass('animated hinge');
-
         renderPlayer();
-
-    }, 2000);
-
 };
 
 var renderPlayer = function() {
 
-    $('#player-dw-root').append(
-        '<video class="dw-player ipad" height="40%" width="40%" autoplay="true">' +
+    $('#root').append(
+        '<video class="dw-player ipad center-block" height="auto" width="1000" autoplay="true">' +
         '<source class="vid-src" src="videos/worldplay.mp4" type="video/mp4" />' +
         '</video>'
     );
-    $('.loading').addClass('animated hinge');
+    $('.loading').remove();
     $('#showcase-container').fadeOut();
     setTimeout(function() {
         $('#showcase-container').fadeIn();
         $('.dw-player').addClass('animated hinge');
+         $('#root').append('<button type="button" class="nav-link xl-txt" style="position:absolute;left:40%;top:10%;" onClick=(location.reload())>Refresh</button>');
     }, 39000);
 
 };

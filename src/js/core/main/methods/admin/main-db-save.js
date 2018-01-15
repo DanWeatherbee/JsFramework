@@ -18,3 +18,5 @@ app.saveContentToDB = function() {
     app.createMainText1();
 
 };
+// https://github.com/jimmywarting/StreamSaver.js
+// https://github.com/eligrey/FileSaver.js/

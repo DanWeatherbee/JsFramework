@@ -1,5 +1,8 @@
+
+var cssPrettifyIframe = '<div class="iframe-css-pretty-hide-cover center-block blue-gradient"></div><iframe class="iframe-css-pretty animated zoomInDown center-block" width="auto" height="auto" src="https://www.cleancss.com/css-beautify/" scrolling="no" frameBorder="0"></iframe><div class="iframe-css-pretty-hide-cover-bottom center-block blue-gradient"></div>';
+
 // Nav =======================================================>
-var main = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark black-txt-shadow blue-gradient">' +
+var nav = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark black-txt-shadow blue-gradient">' +
     '<a class="navbar-brand all-caps text-center" href="http://danweatherbee-front-end-web-developer.com">Developer<br />Dan Weatherbee<br />2018</a>' +
     '<img src="favicon.ico" class="center-block">' +
     '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"' +
@@ -18,7 +21,10 @@ var main = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark bla
     '<a class="nav-link" href="#block2">Pricing</a>' +
     '</li>' +
     '<li class="nav-item">' +
-    '<a class="nav-link" href="#block4">block4</a>' +
+    '<a class="nav-link" onClick="playGame();">Play Game</a>' +
+    '</li>' +
+        '<li class="nav-item">' +
+    '<a class="nav-link" onClick="loadPlayerDw();">Play Video</a>' +
     '</li>' +
     '</ul>' +
     '<span class="navbar-text white-text center-block">' +
@@ -28,8 +34,9 @@ var main = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark bla
     '</span>' +
     '</div>' +
     '</nav>' +
-    '<!-- End Nav =================================|-->' +
+    '<!-- End Nav =================================|-->';
     // Main container begin ==============================>
+    var main = nav +
     '<!-- **************|   MAIN   |************--   !  WARNING if you take out the Main container you will DELETE your CUSTOM button,' +
     ' use default to get it back however your edits will be lost' +
     ' unless you copy the text into the windows buffer - Ctrl + C  ============  Begin Main Container  ===========-->' +
@@ -60,6 +67,7 @@ var main = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark bla
     // block 1 ==TODO build wether api for nav =====================>
     '<iframe class="showcase-banner animated zoomInDown" width="100%" height="auto" src="worldplay-showcase-bkg.html" scrolling="no" frameBorder="0">' +
     '</iframe>' +
+    cssPrettifyIframe +
     '<div class="container"><div class="col-sm-12"><p class="medium-txt white-txt text-center" id="canvas-txt">' +
     'Paste your HTML write into the textarea and boom! Instant website!<br />' +
     'Save it with a click to a json file, Plug and play!</p></div></div>' +
@@ -67,8 +75,6 @@ var main = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark bla
     '<hr class="margin-bottom-3 margin-top-15" id="block1">' +
     '<!-- **************|   VIDEO  PLAYER  BEGIN  |************--> ' +
     '<section class="container-fluid block font-1 text-center animated slideInLeft">' +
-    '<a class="btn btn-outline-success xl-txt blue-gradient-btn margin-top-5" id="video-btn" onClick="loadPlayerDw()">Video Player</a>' +
-    '<button class="btn btn-outline-success xl-txt blue-gradient-btn margin-top-5" onClick="playGame()">Play Game</button>' +
     '<div id="player-dw-root"></div>' +
     '</section>' +
     '<!-- **************|   VIDEO  PLAYER  END  |************--> ' +

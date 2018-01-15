@@ -12,65 +12,65 @@ $('window').ready(function() {
 });
 
 var editContentPage = function() {
-    $('.fa').fadeIn();
-    $('#edit-content-page').hide();
-};
+        $('.fa').fadeIn();
+        $('#edit-content-page').hide();
+    },
 
-var saveContentPage = function() {
+    saveContentPage = function() {
 
-    // Download databases. ===============================================
-    var dbContentEdited = localStorage.getItem('ContentEdited');
-    var dbContentDefault = localStorage.getItem('ContentDefault');
-    // Download edited database.
-    var defaultContentDB = new File([dbContentEdited], "ContentEdited.json");
-    //saveAs(editedDB);
-    // Download default database.
-    var editedContentDB = new File([dbContentDefault], "ContentDefault.json");
+        // Download databases. ===============================================
+        var dbContentEdited = localStorage.getItem('ContentEdited'),
+            dbContentDefault = localStorage.getItem('ContentDefault'),
+            // Download edited database.
+            defaultContentDB = new File([dbContentEdited], "ContentEdited.json"),
+            //saveAs(editedDB);
+            // Download default database.
+            editedContentDB = new File([dbContentDefault], "ContentDefault.json");
 
-    // Save to downloads folder.
-    saveAs(defaultContentDB);
-    saveAs(editedContentDB);
-    $('#save-content-page').hide();
-    $('#edit-content-page').fadeIn();
-};
+        // Save to downloads folder.
+        saveAs(defaultContentDB);
+        saveAs(editedContentDB);
+        $('#save-content-page').hide();
+        $('#edit-content-page').fadeIn();
+    },
 
-// Reset to default.
-var clearContentPage = function() {
-    localStorage.clear();
-    location.reload();
-};
-// ==================================================================
-var wowOn = function() {
-    new WOW().init();
-    console.log('wow initiated.');
-};
-var appendScore = function() {
-    var bonus = localStorage.getItem('bonus', bonus);
-    var completed = localStorage.getItem('completed', completed);
-    var lastplayer = localStorage.getItem('lastplayer', lastplayer);
-    var lastplayerscore = localStorage.getItem('lastplayerscore', lastplayerscore);
-    var men = localStorage.getItem('men', men);
-    var name = localStorage.getItem('name', name);
-    var score = localStorage.getItem('score', score);
+    // Reset to default.
+    clearContentPage = function() {
+        localStorage.clear();
+        location.reload();
+    },
+    // ==================================================================
+    wowOn = function() {
+        new WOW().init();
+        console.log('wow initiated.');
+    },
+    appendScore = function() {
+        var bonus = localStorage.getItem('bonus', bonus);
+        var completed = localStorage.getItem('completed', completed);
+        var lastplayer = localStorage.getItem('lastplayer', lastplayer);
+        var lastplayerscore = localStorage.getItem('lastplayerscore', lastplayerscore);
+        var men = localStorage.getItem('men', men);
+        var name = localStorage.getItem('name', name);
+        var score = localStorage.getItem('score', score);
 
-    $('.navbar').append(
-        '<span class="nav-link white-txt black-txt-shadow">Frogger High Score | ' +
-        lastplayer +
-        ' | ' +
-        lastplayerscore +
-        ' | Your High Score | ' +
-        name +
-        ' | Bonus |' +
-        bonus +
-        ' | Completed |' +
-        completed +
-        ' | Men |' +
-        men +
-        ' | Score |' +
-        score +
-        '</span>'
-    );
-};
+        $('.navbar').append(
+            '<span class="nav-link white-txt black-txt-shadow">Frogger High Score | ' +
+            lastplayer +
+            ' | ' +
+            lastplayerscore +
+            ' | Your High Score | ' +
+            name +
+            ' | Bonus |' +
+            bonus +
+            ' | Completed |' +
+            completed +
+            ' | Men |' +
+            men +
+            ' | Score |' +
+            score +
+            '</span>'
+        );
+    };
 $(document).ready(function() {
     setTimeout(wowOn, 300);
     setTimeout(appendScore, 3000);
