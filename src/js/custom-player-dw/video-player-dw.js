@@ -42,6 +42,7 @@ var renderPlayer = function() {
 
 };
 var playGame = function() {
+    $('#game-play-btn').hide();
     var gameDW = '<a class="btn btn-outline-default nav-link blue-gradient medium-txt black-txt-shadow text-center" id="game-play-btn" onClick="playGame()">Click to Replay - Hint: Use your arrow keys to play.</a><iframe class="ipad-big animated zoomInDown center-block" width="800" height="900" src="app-p3-master/index.html" scrolling="no" frameBorder="0"></iframe>';
 
     $('nav').addClass('animated hinge');
@@ -54,3 +55,5 @@ var playGame = function() {
         );
     }, 2000);
 };
+
+

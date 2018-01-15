@@ -51,6 +51,7 @@
 #game-play-btn {
     max-width: 510px;
     position: fixed;
+    top: 85%;
     left: 36.50%;
     z-index: 1000;
 }

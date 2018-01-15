@@ -14,11 +14,19 @@ var canvasW = 606,
     completed = 0,
     bugAmount = 1,
     bonus = 0,
-    name = 'New user';
-    name = prompt("Nickname", "Ace");
-    // Add to localstorage.
-    localStorage.setItem('name', name);
+    usr,
+    yourscore,
+    lastplayer,
+    lastusr,
+    lastplayerscore;
 
+
+
+
+name = 'New user';
+name = prompt("Nickname", "Ace");
+// Add to localstorage.
+localStorage.setItem('name', name);
 /**
  * Prizes for the player to win
  */
@@ -402,14 +410,20 @@ Player.prototype.scoring = function() {
     localStorage.setItem('score', score);
     localStorage.setItem('men', men);
     localStorage.setItem('bonus', bonus);
-    alert('fix this bug!');
-    var user = localStorage.getItem('name', name);
-    var msg = localStorage.getItem('score', score);
-    msg = user + msg;
-
-    $('#game-header').html(msg);
+    usr = localStorage.getItem('name', name);
+    yourscore = localStorage.getItem('score', score);
+    lastplayerscore = localStorage.getItem('lastplayerscore', lastplayerscore);
+    lastplayer = localStorage.getItem('lastplayer', lastplayer);
+    $('.footer_text').html('<h4>High Score </h4>' + lastplayer + ' ' + lastplayerscore);
+    if (yourscore > lastplayerscore) {
+        lastplayerscore = yourscore;
+        lastplayer = usr;
+        localStorage.setItem('lastplayerscore', lastplayerscore);
+        localStorage.setItem('lastplayer', lastplayer);
+    }
+    $('#game-header').html(name + ' ' + score);
+    $('.footer_text2').remove();
     this.reset();
-// TODO set this up for display.
 };
 
 Player.prototype.render = function() {
