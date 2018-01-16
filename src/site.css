@@ -6,35 +6,22 @@
     background: url('css/bg.jpg') no-repeat;
 }
 
-.iframe-css-pretty,
-.iframe-css-mdb,
-.iframe-html-pretty {
-    height: 845px;
-    background: url('css/bg.jpg') no-repeat;
-    position: relative;
-    bottom: 105px;
-    z-index: -1;
+
+/*.z-index-primary-focus {
+    z-index:1000;
+}*/
+
+.iframe-pretty {
+    height: 500px;
     width: 50%;
-    min-width: 400px;
+    background: url('css/bg.jpg') no-repeat;
+    position: fixed;
+    top: 275px;
+    left: 25%;
 }
 
-.iframe-css-pretty-hide-cover-bottom,
-.iframe-css-pretty-hide-cover {
-    height: 130px;
-    background: url('css/showcase.png') no-repeat;
-    z-index: 1;
-    border-right: 15px solid;
-    border-left: 15px solid;
-    border-color: #0c2c3e;
-    width: 51%;
-    border-radius: 5%;
-    min-width: 400px;
-}
-
-.iframe-css-pretty-hide-cover-bottom {
-    position: relative;
-    bottom: 130px;
-    height: 50px;
+.top-layer {
+    z-index: 10000;
 }
 
 #edit-btn-link {
@@ -85,26 +72,14 @@
     z-index: 1000;
 }
 
-.nav-link:hover {
+.nav-link {
     background-color: black;
     text-transform: uppercase;
 }
 
+
 #game-play-btn:hover,
-.navbar:hover {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#19458d+20,216ec7+50,19458d+80&0+0,0.8+42,1+49,0.8+56,0+100 */
-    background: -moz-linear-gradient(top, rgba(25, 69, 141, 0) 0%, rgba(25, 69, 141, 0.38) 20%, rgba(31, 99, 184, 0.8) 42%, rgba(33, 109, 197, 1) 49%, rgba(33, 110, 199, 0.97) 50%, rgba(31, 102, 187, 0.8) 56%, rgba(25, 69, 141, 0.36) 80%, rgba(25, 69, 141, 0) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(25, 69, 141, 0) 0%, rgba(25, 69, 141, 0.38) 20%, rgba(31, 99, 184, 0.8) 42%, rgba(33, 109, 197, 1) 49%, rgba(33, 110, 199, 0.97) 50%, rgba(31, 102, 187, 0.8) 56%, rgba(25, 69, 141, 0.36) 80%, rgba(25, 69, 141, 0) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(25, 69, 141, 0) 0%, rgba(25, 69, 141, 0.38) 20%, rgba(31, 99, 184, 0.8) 42%, rgba(33, 109, 197, 1) 49%, rgba(33, 110, 199, 0.97) 50%, rgba(31, 102, 187, 0.8) 56%, rgba(25, 69, 141, 0.36) 80%, rgba(25, 69, 141, 0) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0019458d', endColorstr='#0019458d', GradientType=0);
-    background-color: black;
-    /* IE6-9 */
-}
-
-
+bl
 /*----------------------------------------*\ #Custom video player dw \*----------------------------------------*/
 
 #player-dw-root {
@@ -128,6 +103,8 @@
 }
 
 
+
+
 /*----------------------------------------*\ #Image splitting ipad \*----------------------------------------*/
 
 .ipad {
@@ -147,6 +124,8 @@
     -o-border-image: url('css/tablet-bg.png') 50 3 50 repeat;
     border-image: url('css/tablet-bg.png') 50 3 50 fill repeat;
 }
+
+
 
 
 /*----------------------------------------*\ #Images \*----------------------------------------*/
@@ -170,11 +149,15 @@
 }
 
 
+
+
 /*----------------------------------------*\ #Background Colors \*----------------------------------------*/
 
 .bg-white {
     background-color: white;
 }
+
+
 
 
 /*----------------------------------------*\ #Gradients \*----------------------------------------*/
@@ -193,7 +176,11 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=0);
     /* IE6-9 */
 }
+.blue-gradient-border {
+    border: 20px solid;
+}
 
+.blue-gradient-border,
 .blue-gradient {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+20,2989d8+50,1e5799+80&0+0,0.8+15,1+19,1+81,0.8+85,0+100;
     Blue+Two+Sided+Transparent */
@@ -205,6 +192,7 @@
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#001e5799', GradientType=0);
     /* IE6-9 */
+    background-color: black;
 }
 
 .blue-gradient-btn {
@@ -217,11 +205,14 @@
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0019458d', endColorstr='#0019458d', GradientType=0);
     /* IE6-9 */
+    background-color: black;
 }
 
 .top-layer {
     z-index: 100;
 }
+
+
 
 
 /*----------------------------------------*\ #Fontawesome icons \*----------------------------------------*/
@@ -255,6 +246,8 @@
 }
 
 
+
+
 /*----------------------------------------*\ #Video Overlay Main \*----------------------------------------*/
 
 .main-parallax-video {
@@ -285,6 +278,8 @@
 }
 
 
+
+
 /*----------------------------------------*\ #Text Shadows \*----------------------------------------*/
 
 .black-txt-shadow {
@@ -294,6 +289,8 @@
 .white-txt-shadow {
     text-shadow: 0 2px 0 white;
 }
+
+
 
 
 /*----------------------------------------*\ #Fonts \*----------------------------------------*/
@@ -312,11 +309,15 @@
 }
 
 
+
+
 /*----------------------------------------*\ #Letter Spacing \*----------------------------------------*/
 
 .letter-spacing-minus-3 {
     letter-spacing: -3px;
 }
+
+
 
 
 /*----------------------------------------*\ #Text Colors \*----------------------------------------*/
@@ -332,6 +333,8 @@
 .dodgerblue-txt {
     color: dodgerblue;
 }
+
+
 
 
 /*----------------------------------------*\ #Text Sizes \*----------------------------------------*/
@@ -359,6 +362,8 @@
 }
 
 
+
+
 /*----------------------------------------*\ #Text Weight \*----------------------------------------*/
 
 .txt-100 {
@@ -374,11 +379,15 @@
 }
 
 
+
+
 /*----------------------------------------*\ #Opacity \*----------------------------------------*/
 
 .opacity-9 {
     opacity: .9;
 }
+
+
 
 
 /*----------------------------------------*\ #Margins \*----------------------------------------*/
@@ -418,6 +427,8 @@
 .margin-top-15 {
     margin-top: 15%;
 }
+
+
 
 
 /*----------------------------------------*\ #Padding \*----------------------------------------*/
@@ -467,6 +478,8 @@
 }
 
 
+
+
 /*----------------------------------------*\ #Borders \*----------------------------------------*/
 
 .border-1-white {
@@ -480,11 +493,15 @@
 }
 
 
+
+
 /*----------------------------------------*\ #Radius \*----------------------------------------*/
 
 .radius-100 {
     border-radius: 100%;
 }
+
+
 
 
 /*----------------------------------------*\ #Parallax Blocks \*----------------------------------------*/
@@ -499,6 +516,8 @@
     background-size: cover;
     background-attachment: fixed;
 }
+
+
 
 
 /*----------------------------------------*\ #Canvas Overlay \*----------------------------------------*/
@@ -517,6 +536,8 @@
     top: -130px;
     left: 150px;
 }
+
+
 
 
 /*----------------------------------------*\ #Parallax Overlays \*----------------------------------------*/
@@ -541,6 +562,8 @@
 }
 
 
+
+
 /*----------------------------------------*\ #Block sizing \*----------------------------------------*/
 
 .block-size-250 {
@@ -554,6 +577,8 @@
 .block-size-1000 {
     height: 1000px;
 }
+
+
 
 
 /*----------------------------------------*\ #Media Querys \*----------------------------------------*/
@@ -574,6 +599,15 @@
     .img-size-50 {
         width: 20%;
     }
+
+    .iframe-pretty {
+    height: 650px;
+    width: 100%;
+    background: url('css/bg.jpg') no-repeat;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
 }
 
 @media only screen and (max-width: 1200px) {
@@ -605,7 +639,17 @@
         left: 18%;
         z-index: 1000;
     }
+        .iframe-pretty {
+    height: 650px;
+    width: 100%;
+    background: url('css/bg.jpg') no-repeat;
+    position: absolute;
+    top: 300px;
+    left: 0;
 }
+}
+
+
 
 
 /*Ipads/laptops*/

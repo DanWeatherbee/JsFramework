@@ -15,7 +15,7 @@ var loadPlayerDw = function() {
     $('#root').html(
         '<h1 class="loading text-center animated zoomIn infinite big-txt">Player is loading <i class="fa fa-spinner" aria-hidden="true"></i></h1>'
     );
-        renderPlayer();
+    renderPlayer();
 };
 
 var renderPlayer = function() {
@@ -30,7 +30,7 @@ var renderPlayer = function() {
     setTimeout(function() {
         $('#showcase-container').fadeIn();
         $('.dw-player').addClass('animated hinge');
-         $('#root').append('<button type="button" class="nav-link xl-txt" style="position:absolute;left:40%;top:10%;" onClick=(location.reload())>Refresh</button>');
+        $('#root').append('<button type="button" class="nav-link xl-txt" style="position:absolute;left:40%;top:10%;" onClick=(location.reload())>Refresh</button>');
     }, 39000);
 
 };
@@ -48,5 +48,3 @@ var playGame = function() {
         );
     }, 2000);
 };
-
-

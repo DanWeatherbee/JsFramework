@@ -1,9 +1,9 @@
 
-var cssPrettifyIframe = '<div class="iframe-css-pretty-hide-cover center-block blue-gradient"></div><iframe class="iframe-css-pretty animated zoomInDown center-block" width="auto" height="auto" src="https://www.cleancss.com/css-beautify/" scrolling="no" frameBorder="0"></iframe><div class="iframe-css-pretty-hide-cover-bottom center-block blue-gradient"></div>';
-
 // Nav =======================================================>
-var nav = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark black-txt-shadow blue-gradient">' +
-    '<a class="navbar-brand all-caps text-center" href="http://danweatherbee-front-end-web-developer.com">Developer<br />Dan Weatherbee<br />2018</a>' +
+var nav = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark black-txt-shadow blue-gradient bg-black">' +
+    '<a class="navbar-brand all-caps text-center" ' +
+    'href="http://danweatherbee-front-end-web-developer.com' +
+    '">Developer<br />Dan Weatherbee<br />2018</a>' +
     '<img src="favicon.ico" class="center-block">' +
     '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"' +
     'aria-expanded="false" aria-label="Toggle navigation">' +
@@ -15,16 +15,16 @@ var nav = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark blac
     '<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>' +
     '</li>' +
     '<li class="nav-item">' +
-    '<a class="nav-link" href="#block1">Features</a>' +
+    '<a class="nav-link" href="#features-section">Features</a>' +
     '</li>' +
     '<li class="nav-item">' +
-    '<a class="nav-link" href="#block2">Pricing</a>' +
+    '<a class="nav-link" href="#pricing-section">Pricing</a>' +
     '</li>' +
     '<li class="nav-item">' +
     '<a class="nav-link" onClick="playGame();">Play Game</a>' +
     '</li>' +
-        '<li class="nav-item">' +
-    '<a class="nav-link" onClick="loadPlayerDw();">Play Video</a>' +
+    '<li class="nav-item">' +
+    '<a class="nav-link" onClick="iframeCssPrettyObj.init()">Create Iframe</a>' +
     '</li>' +
     '</ul>' +
     '<span class="navbar-text white-text center-block">' +
@@ -35,8 +35,8 @@ var nav = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark blac
     '</div>' +
     '</nav>' +
     '<!-- End Nav =================================|-->';
-    // Main container begin ==============================>
-    var main = nav +
+// Main container begin ==============================>
+var main = nav +
     '<!-- **************|   MAIN   |************--   !  WARNING if you take out the Main container you will DELETE your CUSTOM button,' +
     ' use default to get it back however your edits will be lost' +
     ' unless you copy the text into the windows buffer - Ctrl + C  ============  Begin Main Container  ===========-->' +
@@ -48,7 +48,7 @@ var nav = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark blac
     '<!-- ==========  End Video Parallax  =========-->' +
     // Content ================================>
     '<!--==***************** MOCKUP AREA BEGIN HEADER*******************==|-->' +
-    '<h1 class="animated slideInRight header-txt black-txt-shadow white-txt xl-txt text-center blue-gradient-btn" id="main-header-h1">' +
+    '<h1 class="animated slideInRight top-layer header-txt black-txt-shadow white-txt xl-txt text-center blue-gradient-btn" id="main-header-h1">' +
     'JsFramework Prototype V 1.0</h1>' +
     '<p class="animated slideInRight header-txt black-txt-shadow white-txt text-center medium-txt blue-gradient-btn" id="main-header-p">' +
     'Created in Java Script using the MDB Bootstrap CSS framework for state of the art design<br /> --- with Administration built right in.' +
@@ -67,7 +67,8 @@ var nav = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark blac
     // block 1 ==TODO build wether api for nav =====================>
     '<iframe class="showcase-banner animated zoomInDown" width="100%" height="auto" src="worldplay-showcase-bkg.html" scrolling="no" frameBorder="0">' +
     '</iframe>' +
-    cssPrettifyIframe +
+    '<hr class="margin-bottom-3 margin-top-15" id="dev-tools-section">' +
+    '<div id="pif-root"></div>' +
     '<div class="container"><div class="col-sm-12"><p class="medium-txt white-txt text-center" id="canvas-txt">' +
     'Paste your HTML write into the textarea and boom! Instant website!<br />' +
     'Save it with a click to a json file, Plug and play!</p></div></div>' +
@@ -106,9 +107,9 @@ var nav = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark blac
     '<h5 class="title mb-4 mt-3 font-bold">Links</h5>' +
     '<ul>' +
     '<li><a href="#root">Home</a></li>' +
-    '<li><a href="#block1">Features</a></li>' +
-    '<li><a href="#block2">Pricing</a></li>' +
-    '<li><a href="#block4">block 4</a></li>' +
+    '<li><a onClick="playGame()">Play Game</a></li>' +
+    '<li><a onClick="iframeCssPrettyObj.init()">Dev Tools</a></li>' +
+    '<li><a href="#new-link-section">new-link-section</a></li>' +
     '</ul>' +
     '</div>' +
     '<!--/.Second column-->' +
@@ -117,10 +118,10 @@ var nav = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark blac
     '<div class="col-md-2 mx-auto">' +
     '<h5 class="title mb-4 mt-3 font-bold">Links</h5>' +
     '<ul>' +
-    '<li><a href="#block4">block 4</a></li>' +
-    '<li><a href="#block5">block 5</a></li>' +
-    '<li><a href="#block6">block 6</a></li>' +
-    '<li><a href="#block7">block 7</a></li>' +
+    '<li><a href="#features-section">Features</a></li>' +
+    '<li><a href="#pricing-section">Pricing</a></li>' +
+    '<li><a href="#new-link-section">new-link-section</a></li>' +
+    '<li><a href="#new-link-section">new-link-section</a></li>' +
     '</ul>' +
     '</div>' +
     '<!--/.Third column-->' +
@@ -129,10 +130,10 @@ var nav = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark blac
     '<div class="col-md-2 mx-auto">' +
     '<h5 class="title mb-4 mt-3 font-bold ">Links</h5>' +
     '<ul>' +
-    '<li><a href="#block">block 1</a></li>' +
-    '<li><a href="#block">block 2</a></li>' +
-    '<li><a href="#block">block 3</a></li>' +
-    '<li><a href="#block">block 4</a></li>' +
+    '<li><a href="#new-link-section">new-link-section</a></li>' +
+    '<li><a href="#new-link-section">new-link-section</a></li>' +
+    '<li><a href="#new-link-section">new-link-section</a></li>' +
+    '<li><a href="#new-link-section">new-link-section</a></li>' +
     '</ul>' +
     '</div>' +
     '<!--/.Fourth column-->' +
