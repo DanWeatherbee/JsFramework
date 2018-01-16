@@ -1,48 +1,23 @@
-$('window').ready(function() {
-    // app.editHeaderText();
-    app.editMain();
-    $('#root').prepend('<a href="#root" id="edit-btn-link"><i class="fa fa-edit edit-btns-edit-fixed" id="edit-content-page" onclick="editContentPage()"> Customize Website</i></a>');
-    $('#root').prepend('<i class="fa fa-save edit-btns-save-fixed" id="save-content-page" onclick="saveContentPage()"> Create Database</i>');
-    $('#root').prepend('<i class="fa fa-refresh edit-btns-default-fixed" id="default-content-page" onclick="clearContentPage()"> Default</i>');
-    editContentPage();
-
-    $('.edit-btns').hide();
-    $('.fa-long-arrow-down').fadeIn();
-    $('#edit-content-page').fadeIn();
-});
-
-var editContentPage = function() {
-        $('.fa').fadeIn();
-        $('#edit-content-page').hide();
-    },
-
+                                        /*
+                                        * ---------------------------------***-----------------------------------|
+                                        *      JsFramework Copywrite Dan Weatherbee 2018   *
+                                         *|=====    DON'T MESS WITH THIS ONE     ======|*
+                                        *                         WEBSITE DEFAULT                         *
+                                        *                          ****    ADMIN    ****                           *
+                                        *                                     ====                                     *
+                                        * -----------------------------------------------------------------------|
+                                         */
+var dbContentEdited = localStorage.getItem('ContentEdited'),
+    dbContentDefault = localStorage.getItem('ContentDefault'),
+    defaultContentDB = new File([dbContentEdited], "ContentEdited.json"),
+    editedContentDB = new File([dbContentDefault], "ContentDefault.json"),
     saveContentPage = function() {
-
-        // Download databases. ===============================================
-        var dbContentEdited = localStorage.getItem('ContentEdited'),
-            dbContentDefault = localStorage.getItem('ContentDefault'),
-            // Download edited database.
-            defaultContentDB = new File([dbContentEdited], "ContentEdited.json"),
-            //saveAs(editedDB);
-            // Download default database.
-            editedContentDB = new File([dbContentDefault], "ContentDefault.json");
-
-        // Save to downloads folder.
         saveAs(defaultContentDB);
         saveAs(editedContentDB);
-        $('#save-content-page').hide();
-        $('#edit-content-page').fadeIn();
     },
-
-    // Reset to default.
     clearContentPage = function() {
         localStorage.clear();
         location.reload();
-    },
-    // ==================================================================
-    wowOn = function() {
-        new WOW().init();
-        console.log('wow initiated.');
     },
     appendScore = function() {
         var bonus = localStorage.getItem('bonus', bonus);
@@ -69,9 +44,6 @@ var editContentPage = function() {
             ' | Score |' +
             score +
             '</span>'
-        );
+        ),
+        init = function () {console.log('App initiated')};
     };
-$(document).ready(function() {
-    setTimeout(wowOn, 300);
-    setTimeout(appendScore, 3000);
-});

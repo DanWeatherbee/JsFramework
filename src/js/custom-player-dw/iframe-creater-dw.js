@@ -8,7 +8,7 @@ var begin_frame = '<div class="iframe-css-pretty-hide-cover center-block blue-gr
     '<iframe class="iframe-pretty animated zoomInDown" id="iframeP"' +
     'width="auto" height="auto" src="',
     src = 'https://www.cleancss.com/html-beautify/',
-    end_frame = '" scrolling="yes" frameBorder="1">' +
+    end_frame = '" scrolling="yes" frameBorder="1" allowfullscreen="1">' +
     '</iframe>',
     /*
      * $('#pif-root') elem to append to, you must have a div with this id on your page.

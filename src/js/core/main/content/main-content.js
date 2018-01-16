@@ -1,6 +1,5 @@
-
-// Nav =======================================================>
-var nav = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark black-txt-shadow blue-gradient bg-black">' +
+var nav = '<!-- **************|   Navigation   |************--> ' +
+    '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark black-txt-shadow blue-gradient bg-black">' +
     '<a class="navbar-brand all-caps text-center" ' +
     'href="http://danweatherbee-front-end-web-developer.com' +
     '">Developer<br />Dan Weatherbee<br />2018</a>' +
@@ -12,19 +11,19 @@ var nav = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark blac
     '<div class="collapse navbar-collapse" id="navbarText">' +
     '<ul class="navbar-nav mr-auto">' +
     '<li class="nav-item active">' +
-    '<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>' +
+    '<i class="nav-link fa fa-refresh" aria-hidden="true" onClick="clearContentPage()"></i>' +
     '</li>' +
     '<li class="nav-item">' +
-    '<a class="nav-link" href="#features-section">Features</a>' +
+    '<i class="nav-link fa fa-save" aria-hidden="true" onClick="saveContentPage()"></i>' +
     '</li>' +
     '<li class="nav-item">' +
-    '<a class="nav-link" href="#pricing-section">Pricing</a>' +
+    '<i class="nav-link fa fa-edit" aria-hidden="true" onClick="editWebsite()"></i>' +
     '</li>' +
     '<li class="nav-item">' +
-    '<a class="nav-link" onClick="playGame();">Play Game</a>' +
+    '<i class="nav-link fa fa-gamepad" aria-hidden="true" onClick="playGame()"></i>' +
     '</li>' +
     '<li class="nav-item">' +
-    '<a class="nav-link" onClick="iframeCssPrettyObj.init()">Create Iframe</a>' +
+    '<i class="nav-link fa fa-cubes" aria-hidden="true" onClick="iframeCssPrettyObj.init()">Create Iframe</i>' +
     '</li>' +
     '</ul>' +
     '<span class="navbar-text white-text center-block">' +
@@ -33,59 +32,38 @@ var nav = '<nav class="font-1 navbar fixed-top navbar-expand-lg navbar-dark blac
     '<i class="fa fa-phone" aria-hidden="true"> Call: 1 - 250 307 6272</i>' +
     '</span>' +
     '</div>' +
-    '</nav>' +
-    '<!-- End Nav =================================|-->';
-// Main container begin ==============================>
-var main = nav +
-    '<!-- **************|   MAIN   |************--   !  WARNING if you take out the Main container you will DELETE your CUSTOM button,' +
-    ' use default to get it back however your edits will be lost' +
-    ' unless you copy the text into the windows buffer - Ctrl + C  ============  Begin Main Container  ===========-->' +
-    '<main id="main" class="contaner-fluid animated fadeIn margin-top-5">' +
-    '<!-- =============== Video Parallax  ===============-->' +
+    '</nav>',
+    main = nav +
+    '<!-- **************|   MAIN   |************-->' +
+    '<main id="main" class="contaner-fluid animated fadeIn margin-body-top-5">' +
+    '<!-- **************|  PARALLAX  |************--> ' +
     '<video class="main-parallax-video animated zoomIn" autoplay="true">' +
     '<source src="videos/mp4.mp4" type="video/mp4" />' +
     '</video>' +
-    '<!-- ==========  End Video Parallax  =========-->' +
-    // Content ================================>
-    '<!--==***************** MOCKUP AREA BEGIN HEADER*******************==|-->' +
-    '<h1 class="animated slideInRight top-layer header-txt black-txt-shadow white-txt xl-txt text-center blue-gradient-btn" id="main-header-h1">' +
+    '<!-- **************|   EDIT   |************--> ' +
+    '<h1 class="animated slideInRight black-txt-shadow white-txt text-center blue-gradient-btn">' +
     'JsFramework Prototype V 1.0</h1>' +
-    '<p class="animated slideInRight header-txt black-txt-shadow white-txt text-center medium-txt blue-gradient-btn" id="main-header-p">' +
+    '<h2 class="text-center white-txt black-txt-shadow">' +
+
+
+    '<br /><br /><br /><br />' +
+    '|------------|   Paste Your Code In Here  Watch it Grow !!  |------------|' +
+    '<br /><br /><br /><br /><br /><br />' +
+    '<em>CODE GOES HERE</em>' +
+    '<br /><br /><br /><br /><br /><br />' +
+    '|------------|   Paste Your Code In Here  Watch it Grow !!  |------------|' +
+    '<br /><br /><br /><br />' +
+
+    '</h1>' +
+    '<p class="animated slideInRight black-txt-shadow white-txt text-center blue-gradient-btn">' +
     'Created in Java Script using the MDB Bootstrap CSS framework for state of the art design<br /> --- with Administration built right in.' +
     '</p>' +
-    '<a href="#block1"><i class="fa fa-briefcase black-txt-shadow animated lightSpeedIn" ' +
-    ' aria-hidden="true"></i></a>' +
-    '<a href="#block1"><i class="fa fa-shopping-cart text-left black-txt-shadow animated lightSpeedIn"' +
-    ' aria-hidden="true"></i></a>' +
-    '<div class="text-center">' +
-    '<a href="#block1"><i class="fa fa-long-arrow-down black-txt-shadow radius-100 margin-top-35' +
-    ' pad-2 animated bounce infinite margin-top-20" aria-hidden="true"></i></a>' +
-    '</div>' +
-    '<!--==***************** MOCKUP AREA END HEADER*******************==|-->' +
-    '<!--Block 1 ================|-->' +
-    '<!--==***************** MOCKUP AREA BEGIN  Create here. *******************==|-->' +
-    // block 1 ==TODO build wether api for nav =====================>
-    '<iframe class="showcase-banner animated zoomInDown" width="100%" height="auto" src="worldplay-showcase-bkg.html" scrolling="no" frameBorder="0">' +
-    '</iframe>' +
-    '<hr class="margin-bottom-3 margin-top-15" id="dev-tools-section">' +
-    '<div id="pif-root"></div>' +
-    '<div class="container"><div class="col-sm-12"><p class="medium-txt white-txt text-center" id="canvas-txt">' +
-    'Paste your HTML write into the textarea and boom! Instant website!<br />' +
-    'Save it with a click to a json file, Plug and play!</p></div></div>' +
-    '<!--These hrs are for link navigation nav/footer -->' +
-    '<hr class="margin-bottom-3 margin-top-15" id="block1">' +
-    '<!-- **************|   VIDEO  PLAYER  BEGIN  |************--> ' +
-    '<section class="container-fluid block font-1 text-center animated slideInLeft">' +
-    '<div id="player-dw-root"></div>' +
-    '</section>' +
-    '<!-- **************|   VIDEO  PLAYER  END  |************--> ' +
 
-    '<!--==***************** MOCKUP AREA END Paste your html in above. **********************==|-->' +
-    '<!--Block 1 end ============================|-->' +
-    '<!-- **************|   MAIN  END   |************--> ' +
-    '</main>' + // MAIN container end ==============================>
-    //  Footer ===================================>
-    '<!--Footer Begin ===========================|-->' +
+    // block 1 ==TODO build wether api for nav =====================>
+    // block 1 ==TODO stop creating css and use bootstrap 100% text styling. =====================>
+    '<!-- **************|   EDIT   |************--> ' +
+    '</main>' +
+    '<!-- **************|   FOOTER   |************--> ' +
     '<footer class="page-footer center-on-small-only blue-gradient container-fluid animated fadeInUp">' +
     '<!--Footer Links-->' +
     '<div class="container">' +
@@ -104,12 +82,19 @@ var main = nav +
     '<hr class="clearfix w-100 d-md-none">' +
     '<!--Second column-->' +
     '<div class="col-md-2 mx-auto">' +
-    '<h5 class="title mb-4 mt-3 font-bold">Links</h5>' +
+    '<h5 class="title mb-4 mt-3 font-bold">Dev Tools</h5>' +
     '<ul>' +
-    '<li><a href="#root">Home</a></li>' +
-    '<li><a onClick="playGame()">Play Game</a></li>' +
-    '<li><a onClick="iframeCssPrettyObj.init()">Dev Tools</a></li>' +
-    '<li><a href="#new-link-section">new-link-section</a></li>' +
+    '<i class="nav-link fa fa-refresh" aria-hidden="true" onClick="clearContentPage()"> Refresh</i>' +
+    '</li>' +
+    '<li>' +
+    '<i class="nav-link fa fa-save" aria-hidden="true" onClick="saveContentPage()"> Save</i>' +
+    '</li>' +
+    '<li>' +
+    '<i class="nav-link fa fa-edit" aria-hidden="true" onClick="editContentPage()"> Edit</i>' +
+    '</li>' +
+    '<li>' +
+    '<i class="nav-link fa fa-gamepad" aria-hidden="true" onClick="playGame()"> Game</i>' +
+    '</li>' +
     '</ul>' +
     '</div>' +
     '<!--/.Second column-->' +
@@ -118,8 +103,8 @@ var main = nav +
     '<div class="col-md-2 mx-auto">' +
     '<h5 class="title mb-4 mt-3 font-bold">Links</h5>' +
     '<ul>' +
-    '<li><a href="#features-section">Features</a></li>' +
     '<li><a href="#pricing-section">Pricing</a></li>' +
+    '<li><a href="#new-link-section">new-link-section</a></li>' +
     '<li><a href="#new-link-section">new-link-section</a></li>' +
     '<li><a href="#new-link-section">new-link-section</a></li>' +
     '</ul>' +
@@ -155,7 +140,7 @@ var main = nav +
     '<!--Social buttons-->' +
     '<div class="social-section text-center">' +
     '<ul>' +
-    '<li><a class="btn-floating btn-sm btn-fb"><i class="fa fa-facebook"> </i></a></li>' +
+    '<li>< a class = "btn-floating btn-sm btn-fb"><i class="fa fa-facebook"> </i></a></li>' +
     '<li><a class="btn-floating btn-sm btn-tw"><i class="fa fa-twitter"> </i></a></li>' +
     '<li><a class="btn-floating btn-sm btn-gplus"><i class="fa fa-google-plus"> </i></a></li>' +
     '<li><a class="btn-floating btn-sm btn-li"><i class="fa fa-linkedin"> </i></a></li>' +

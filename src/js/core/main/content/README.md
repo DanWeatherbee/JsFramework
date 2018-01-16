@@ -5,9 +5,19 @@ controls is a boolean attribute:
 
 Note: The values "true" and "false" are not allowed on boolean attributes. 
 To represent a false value, the attribute has to be omitted altogether.
-
+                                        /*
+                                        * ---------------------------------***-----------------------------------|
+                                        *      JsFramework Copywrite Dan Weatherbee 2018   *
+                                        *           Create your own css sheet for Mock ups.        *
+                                        *                 and add them inside helmet js.                   *
+                                         *|=====    DON'T MESS WITH THIS ONE     ======|*
+                                        *                         WEBSITE DEFAULT                         *
+                                        *                             ****    CSS    ****                            *
+                                        *                                      ====                                     *
+                                        * -----------------------------------------------------------------------|
+                                         */
 Perfect Template for a Iframe Creation Class --DW-- | 2018
-ESC Scope var, let, const. What you should use. Refferece: http://wesbos.com/let-vs-const/
+
     // Create Iframe Class
 
     let cssPrettifyIframeBegin = '<div class="iframe-css-pretty-hide-cover center-block blue-gradient">' +

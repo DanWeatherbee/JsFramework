@@ -1,7 +1,7 @@
 /*
-Written in a Object Oriented pattern OOP by Dan Weatherbee
-builder Class
-*/
+ * Written in a Object Oriented pattern OOP by Dan Weatherbee
+ * builder Class
+ */
 CreateAppClass = function(
     CreateDB,
     siteContentStr,
@@ -17,15 +17,15 @@ CreateAppClass = function(
 
     // Download databases. ===============================================
 
-    var dbContentEdited = localStorage.getItem('ContentEdited');
-    var dbContentDefault =  localStorage.getItem('ContentDefault');
+    var dbContentEdited = localStorage.getItem('ContentEdited'),
+        dbContentDefault = localStorage.getItem('ContentDefault'),
 
-    // Download edited database.
-    var editedContentDB = new File([dbContentEdited], "ContentEdited");
-    //saveAs(editedDB);
-   // Download default database.
-    var defaultContentDB = new File([dbContentDefault], "ContentDefault");
-// ==================================================================
+        // Download edited database.
+        editedContentDB = new File([dbContentEdited], "ContentEdited"),
+        //saveAs(editedDB);
+        // Download default database.
+        defaultContentDB = new File([dbContentDefault], "ContentDefault");
+    // ==================================================================
 
 
     // // get from localstorage to load site.
@@ -34,4 +34,3 @@ CreateAppClass = function(
         self.siteContentObj = JSON.parse(localStorage.getItem('ContentDefault'));
     };
 };
-
